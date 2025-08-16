@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .power-controls {
+        gap: 10px;
+    }
+    
+    #freeze-btn, #jump-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+    
+    .score-display, .time-display {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+    
+    .player-info {
+        padding: 15px;
+    }
+    
+    .stat {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .power-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #freeze-btn, #jump-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+    }
+    
+    .score-display, .time-display {
+        font-size: 16px;
+    }
+    
+    .player-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rank {
+        position: static;
+        margin-bottom: 5px;
+    }
+}
