@@ -6,14 +6,17 @@
     <title>قفزة الزمن - اللعبة</title>
     <link rel="stylesheet" href="css/game.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <canvas id="game-canvas"></canvas>
-    <div id="game-hud"></div>
-    <script type="module">
-        import './js/physics.js';
-        import './js/game-engine.js';
-        import './components/game-hud.js';
-    </script>
+    <div id="game-hud-container"></div>
+    <div id="death-overlay" style="display:none">
+        <h2>انتهت اللعبة!</h2>
+        <p>الدرجة: <span id="final-score">0</span></p>
+        <button id="watch-ad-btn">مشاهدة إعلان للمواصلة</button>
+        <button id="restart-btn">إعادة المحاولة</button>
+    </div>
+    <script type="module" src="js/game-engine.js"></script>
 </body>
 </html>
